@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    color: #2d3c49;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+}
+
+.container header {
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid #7d97ad;
+}
+
+.container header .header-logo {
+    width: 25%
+}
+
+.container header .header-info {
+    width: 75%;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.container header .header-info .name {
+    font-size: 1.4em;
+    height: 50%;
+    margin-top: 10px;
+    font-family: 'Roboto-light', 'Roboto', sans-serif;
+    width: 95%;
+}
+
+.container header .header-info .job-title {
+    font-size: 1em;
+    width: 95%;
+}
+
+.container .feature-image {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.container .feature-works {}
+
+.container .feature-works h2 {
+    color: #7d97ad;
+    padding-left: 10px;
+}
+
+.container .feature-works .projects {}
+
+.container .feature-works .projects .work {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.container .feature-works .projects .work img{
+    width: 30%;
+    height: 30%;
+}
+
+.container .feature-works .projects .work .work-info{
+    width: 70%;
+}
+
+.container .feature-works .projects .work .work-info .title{
+   margin: 5px;
+}
+
+.container .feature-works .projects .work .work-info a{
+    font-size: 0.5em;
+}
+
+#logo,
+#feature-image {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+
+@media (max-width: 575px) {}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .container header .header-info .name {
+        font-size: 2.25em;
+    }
+    .container header .header-info .job-title {
+        font-size: 1.5em;
+    }
+    .container header {
+        border-bottom: 2.5px solid #7d97ad;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container header .header-info .name {
+        font-size: 3em;
+    }
+    .container header .header-info .job-title {
+        font-size: 2em;
+    }
+    .container header {
+        border-bottom: 3px solid #7d97ad;
+    }
+
+    .container .feature-works .projects {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+
+    .container .feature-works .projects .work {
+        width: 30%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .feature-works .projects .work img{
+        width: 80%;
+        height: 80%;
+    }
+    .container .feature-works .projects .work .work-info{
+        width: 100%;
+    }
+    
+    .container .feature-works .projects .work .work-info .title{
+       margin: 0;
+       text-align: center;
+    }
+    
+    .container .feature-works .projects .work .work-info a{
+        display: block;
+        text-align: center;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .container header {
+        border-bottom: 4px solid #7d97ad;
+    }
+    .container header .header-info .name {
+        font-size: 3.25em;
+    }
+    .container header .header-info .job-title {
+        font-size: 2.25em;
+    }
+    .container {
+        width: 992px;
+        max-width: 992px;
+        margin: 0 auto;
+        box-shadow: 0px 0px 40px -8px rgba(0, 0, 0, 0.81);
+    }
+    .container .feature-works .projects {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+
+    .container .feature-works .projects .work {
+        width: 30%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .feature-works .projects .work img{
+        width: 80%;
+        height: 80%;
+    }
+    .container .feature-works .projects .work .work-info{
+        width: 100%;
+    }
+    
+    .container .feature-works .projects .work .work-info .title{
+       margin: 0;
+       text-align: center;
+    }
+    
+    .container .feature-works .projects .work .work-info a{
+        display: block;
+        text-align: center;
+    }
+}
